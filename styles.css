@@ -58,6 +58,7 @@ body, html {
 .title{
     display: flex;
     justify-content: center;
+    background: transparent;
 }
 
 .title h2{
@@ -66,7 +67,8 @@ body, html {
     width: 50%;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid rgb(9, 237, 191);
+    border-bottom: 2px solid #09edbf;
+    background: transparent;
 }
 
 .Projects{
@@ -80,11 +82,78 @@ body, html {
     padding: 0%;
 }
 
+.project-links{
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-links a{
+    background: transparent;
+    text-decoration: none;
+}
+
+.project-card:hover{
+    background-color: #06f6c2;  
+    p, h3 {color: white;}  
+}
+
+.project-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    min-height: 200px;
+    border: 2px solid #09edbf;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card p{
+    color: #09edbf;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links a{
+    text-decoration: none;
+    margin:3%;
+}
+
+.contact-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    border: 1px solid #09edbf;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-card:hover{
+    background-color: #06f6c2;  
+    p {color: white;}
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+}
+
 p{
     color:black;
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
+    background: transparent;
 }
 
 h2{
@@ -96,6 +165,9 @@ h1{
     background: transparent;
 }
 
-a{
-    color: #3B82F6;
+h3{
+    background: transparent;
+    color: #06f6c2;
+    font-weight: bolder;
+    font-size: 2rem;
 }
